@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stopwatch {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: monospace;
+}
+
+.controls button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #667eea;
+    color: white;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.controls button:hover {
+    background: #5a6fd6;
+    transform: translateY(-2px);
+}
+
+.controls button:active {
+    transform: translateY(0);
+}
+
+.controls button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#laps {
+    list-style: none;
+    margin-top: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#laps li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.2rem;
+}
+
+#laps li:first-child {
+    border-top: 1px solid #eee;
+}
