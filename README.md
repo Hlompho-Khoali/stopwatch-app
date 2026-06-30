@@ -8,9 +8,9 @@ It allows users to start, stop, reset, and record lap times with a clean and mod
 3. Lap recording with automatic numbering
 
 # How to Run
-1. Clone the repository:
+Clone the repository:
    ```bash
-   git clone https://github.com/Hlompho-Khoali/stopwatch-app-.git
+   https://github.com/Hlompho-Khoali/stopwatch-app.git
 download the project files.
 
 Make sure you have the following files in the same folder:
